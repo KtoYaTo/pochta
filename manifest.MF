@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Main-Class: ru.com.first.pochta.PochtaApplication
+
+Name: ru/com/first/pochta/
+Sealed: true
+
+Name: ru/com/first/pochta/repository/
+Sealed: true
+
+Name: ru/com/first/pochta/model/
+Sealed: true
+
+Name: ru/com/first/pochta/contoller/
+Sealed: true
+
+Name: ru/com/first/pochta/exception/
+Sealed: true
+

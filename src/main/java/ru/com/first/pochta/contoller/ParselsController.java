@@ -45,7 +45,7 @@ public class ParselsController {
         return ParselsRepository.save(Parsels);
     }
 
-    @PutMapping("/parsels/{id}")
+    @PutMapping("/parselsput/{id}")
     public ResponseEntity<Parsels> updateParsels(@PathVariable(value = "id") Long ParselsId,
          @Valid @RequestBody Parsels ParselsDetails) throws ResourceNotFoundException {
         Parsels Parsels = ParselsRepository.findById(ParselsId)
@@ -58,7 +58,7 @@ public class ParselsController {
         return ResponseEntity.ok(updatedParsels);
     }
 
-    @DeleteMapping("/parsels/{id}")
+    @DeleteMapping("/parselsdel/{id}")
     public Map<String, Boolean> deleteParsels(@PathVariable(value = "id") Long ParselsId)
          throws ResourceNotFoundException {
         Parsels Parsels = ParselsRepository.findById(ParselsId)
